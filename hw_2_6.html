@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	function addition(a, b) {
+		return a + b;
+	}
+
+	function subtraction(a, b) {
+		return a - b;
+	}
+
+	function multiplication(a, b) {
+		return a * b;
+	}
+
+	function division(a, b) {
+		return a / b;
+	}
+
+
+	function mathOperation(arg1, arg2, operation){
+		switch(operation) {
+			case '+':
+				return arg1 + arg2;
+				break;
+			case '-':
+				return arg1 - arg2;
+			case '*':
+				return arg1 * arg2;
+			case '/':
+				return arg1 / arg2;
+			default:
+				return 'введен некорректный оператор'
+		}
+	}
+
+	console.log(mathOperation(5, 5, '+'));
+
+</script>
