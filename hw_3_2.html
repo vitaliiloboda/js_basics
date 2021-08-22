@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	let basket = [45, 2, 9, 14, 57, 178, 54, 67, 42];
+
+	function countBasketPrice (arr){
+		let sum = arr.reduce(function(acc, elem) {
+			return acc + elem
+		}, 0);
+		return sum;
+	}
+
+	console.log(countBasketPrice(basket));
+
+</script>

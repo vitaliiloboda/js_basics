@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	let simple = [];
+	let i = 2;
+	let n = 100;
+
+	while(i <= n){
+
+		let y = 0;
+
+		for (let x = 2; x <= 100; x++){
+
+			if (x != i && i % x === 0 || i === 1 ){
+				break;
+			} else if(x === i){
+				y++;
+				continue;
+			}
+		}
+
+		if (y === 1){
+			simple.push(i);
+		}
+		i++;
+	}
+
+	console.log('result: ' + simple);
+
+</script>
