@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	let converting = function(num) {
+
+		class NumObject {
+			constructor(one, ten, hundred) {
+				this.one = one;
+				this.ten = ten;
+				this.hundred = hundred;
+			}
+		}
+
+		if (num > 999) {
+			console.log('The number is above the maximum value.');
+			return new NumObject();
+		}
+
+		let one = num % 10;
+		let ten = (num - one) / 10 % 10;
+		let hundred = ((num - one) / 10 - ten) / 10;
+		return new NumObject(one, ten, hundred);
+	}
+
+	console.log(converting(925));
+
+</script>
