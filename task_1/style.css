@@ -1,0 +1,54 @@
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.black {
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.white {
+    color: black;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.letters {
+    display: flex;
+    flex-direction: row;
+}
+
+.letter {
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.position {
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers {
+    padding-top: 70px;
+}
+
+.number {
+    height: 100px;
+    width: 10px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+
